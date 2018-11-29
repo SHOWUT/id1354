@@ -31,8 +31,14 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-use Id1354fw\Core\Start;
 
-require_once 'classes/Id1354fw/Core/Start.php';
-$starter = new Start();
-$starter->startFramework();
+namespace Id1354fw\Core;
+
+/**
+ * Thrown if a needed class can not be loaded.
+ *
+ * @author Leif Lindback, leifl@kth.se
+ */
+class ClassNotFoundException  extends \Exception {
+    
+}

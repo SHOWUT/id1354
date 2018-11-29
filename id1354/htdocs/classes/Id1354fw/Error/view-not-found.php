@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Copyright (c) 2015, Leif Lindbäck
  * All rights reserved.
@@ -31,8 +30,29 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-use Id1354fw\Core\Start;
 
-require_once 'classes/Id1354fw/Core/Start.php';
-$starter = new Start();
-$starter->startFramework();
+/**
+ * This is the error page returned when neither the specified request handler, nor a default handler
+ * is found.
+ */
+
+\http_response_code(404);
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            View Not Found.
+        </title>
+    </head>
+    <body>
+        <h1>
+            View Not Found.
+        </h1>
+        <p>
+            No matching view was found for the path <?php echo $exception->getPath(); ?> 
+        </p>
+    </body>
+</html>

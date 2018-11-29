@@ -31,8 +31,30 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-use Id1354fw\Core\Start;
 
-require_once 'classes/Id1354fw/Core/Start.php';
-$starter = new Start();
-$starter->startFramework();
+namespace Id1354fw\View;
+
+/**
+ * Thrown if a specified view file can not be found.
+ *
+ * @author Leif Lindback, leifl@kth.se
+ */
+class ViewNotFoundException extends \Exception {
+
+    /**
+     * Constructs a new instance, indicating that the specified view could not be found.
+     * 
+     * @param string $path The path to the view file that could not be found.
+     */
+    public function __construct($path) {
+        parent::__construct($path);
+    }
+
+    /**
+     * @return string The path to the view that could not be found.
+     */
+    public function getPath() {
+        return $this->getMessage();
+    }
+
+}

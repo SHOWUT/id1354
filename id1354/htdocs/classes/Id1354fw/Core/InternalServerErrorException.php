@@ -31,8 +31,14 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-use Id1354fw\Core\Start;
 
-require_once 'classes/Id1354fw/Core/Start.php';
-$starter = new Start();
-$starter->startFramework();
+namespace Id1354fw\Core;
+
+/**
+ * Thrown when the framework can not complete its task.
+ *
+ * @author Leif Lindback, leifl@kth.se
+ */
+class InternalServerErrorException  extends \Exception {
+    
+}

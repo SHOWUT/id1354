@@ -30,9 +30,8 @@ Styling for the recipe pages
 .comments{
     width: 90.5%;
     display: block;
-    overflow: scroll;  
     background-color: #9c9c9c;
-    height: 500px;
+    min-height: 500px;
     position: relative;
     text-align: left;
     margin-top: 19em;

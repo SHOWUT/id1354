@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Copyright (c) 2015, Leif Lindbäck
  * All rights reserved.
@@ -31,8 +30,31 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-use Id1354fw\Core\Start;
 
-require_once 'classes/Id1354fw/Core/Start.php';
-$starter = new Start();
-$starter->startFramework();
+/**
+ * This is the error page returned when the framework can not complete a task.
+ */
+
+\http_response_code(500);
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Internal Server Error.
+        </title>
+    </head>
+    <body>
+        <h1>
+            Internal Server Error.
+        </h1>
+        <p>
+            <?php echo \get_class($exception) . ": " . $exception->getMessage(); ?> 
+        </p>
+        <p>
+            <?php echo $exception->getTraceAsString(); ?>
+        </p>
+    </body>
+</html>
