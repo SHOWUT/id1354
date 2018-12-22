@@ -1,0 +1,68 @@
+/********************************
+Styling for the calendar page
+**********************************/
+
+.weekdays {
+    margin: 0;
+    padding: 0em;
+    background-color: #999999;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 12%;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2em;
+    padding-left: 1.04em;
+    margin-left: .3em;
+}
+
+.days {
+    padding: 0;
+    
+    
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    text-align: left;
+    margin-left: .5em;
+    margin-bottom: .6em;
+    margin-top: .6em;
+    font-size:12px;
+    font-weight: bold;
+    color: #000000;
+    padding-top: 0em;
+    padding-left: .3em;
+    padding-bottom: 9.2em;
+    background: #2bff00;
+}
+
+.meatballs a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-image: url(/resources/images/meatballs.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 252px;
+    top: 430px;
+    position: absolute;
+}
+
+.pancakes a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-image: url(/resources/images/pancakes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 52px;
+    top: 430px;
+    position: absolute;
+}
