@@ -14,7 +14,7 @@ include 'resources/includes/dbh.inc.php';
         $result= mysqli_query($conn, $sql);
 
     }
-    # mby need to change the name of the variables 
+    
     function showComments($conn,$ridp) {      
         $sql= "SELECT * FROM comments WHERE rid='$ridp'"; 
         $result= mysqli_query($conn, $sql);
