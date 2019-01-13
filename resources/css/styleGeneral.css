@@ -1,0 +1,160 @@
+/********************************
+Styling for the index page and general 
+styling that is shared. 
+**********************************/
+
+body{
+    background-color: #dfdfdf;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#navbar{
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#navbar a:hover{
+    color: #2bff00;
+    font-style: italic;
+}
+
+
+
+.logIn{ /* what is this, want to move the log in bar somehow? */
+    display: inline-block;
+    text-align: right;
+}
+
+.buttonCalendar{
+    display: inline-block;
+    background-color: #2bff00;
+    color: #000000;
+    padding: 5px 10px;
+    border: outset;
+    text-decoration: none;
+    position: relative;
+    margin-left: 2em;
+    top: 1em;
+}
+
+.buttonCalendar:hover{
+    font-style: italic;
+    font-weight: bold;
+}
+
+button:hover{
+    font-style: italic;
+    font-weight: bold;
+}
+
+button{
+    width: 80px;
+    height:25px;
+    background-color: #2bff00;
+    cursor: pointer;
+}
+
+.listMenu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.listMenu a:hover{
+    color: #2bff00;
+    font-style: italic;
+}
+
+.listMenu h5{
+    font-weight: bold;
+}
+
+#banner {
+    background-image: url(/resources/images/header.png);
+    background-size: cover;
+    width: 1450px;
+    height: 280px;
+    background-repeat: no-repeat;
+   
+}
+
+.header{
+    font-size: 64px;
+    display: block;
+    font-weight: bold;
+    padding-top: 1em;
+    text-align: left;
+    margin-left: 0.4em;
+}
+
+.block{
+    float: left;
+    width: 43%;
+    background: #9c9c9c;
+    padding-left: 2em;
+    margin-left: 2em;
+    padding-top: .5em;
+}
+
+.block li{
+    list-style-type: square;
+}
+
+.pictureCalendarPromo{
+    background-image: url(/resources/images/calendarPromo.png);
+    display: block;
+    width: auto;
+    height: 243px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50px;
+    padding-bottom: 3em;
+    margin-left: 2em;
+}
+
+.signup-form{
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.signup-error{
+    color:red;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.signup-success{
+    color:green;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.login-button{
+    cursor: pointer;
+}

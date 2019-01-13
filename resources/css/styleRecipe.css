@@ -1,0 +1,83 @@
+/********************************
+Styling for the recipe pages
+**********************************/
+
+
+.pictureMeatballs{
+    background-image: url(/resources/images/meatballs.png);
+    display: block;
+    width: auto;
+    height: 243px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50px;
+    padding-bottom: 6em;
+    margin-left: 2em;
+}
+
+.picturePancakes{
+    background-image: url(/resources/images/pancakes.png);
+    display: block;
+    width: auto;
+    height: 243px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50px;
+    padding-bottom: 6em;
+    margin-left: 2em;
+}
+
+.comments{
+    width: 90.5%;
+    display: block;
+    overflow: scroll;  
+    background-color: #9c9c9c;
+    height: 500px;
+    position: relative;
+    text-align: left;
+    margin-top: 19em;
+    margin-left: 2em;
+    margin-right: 50em;
+    line-height: 2.5em;
+    padding-left: 2em;
+}
+
+/*don neeed anymore */
+.userNameBold{
+    font-weight: bold;
+}
+
+textarea{
+    width: 400px;
+    height: 50px;
+    background-color: #fff;
+    resize: none;
+}
+
+button{
+    width: 80px;
+    height:25px;
+    background-color: #2bff00;
+    cursor: pointer;
+}
+
+.comment-form{
+    margin-bottom: 2em;
+}
+
+.comment-box{
+    width: 800px;
+    padding: 20px;
+    margin-bottom: 5px;
+    background-color: #707070;
+}
+
+.comment-box p{
+    font-weight: bold;
+}
+
+.delete-form{
+    position: relative;
+    left: 47em;
+    bottom: 44px;
+}
